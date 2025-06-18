@@ -27,7 +27,7 @@ runs:
           STEP_ID: ${{ step.internal.id }}
       run: /app/plugin-syftbom-analyser -mode single
     - name: Complete execution plan
-      uses: docker://020229604682.dkr.ecr.us-east-1.amazonaws.com/actions/assets-plugin-chain-utils:ca6b6b9bfd1ce7d9d204ff35829ad7960913d258
+      uses: docker://020229604682.dkr.ecr.us-east-1.amazonaws.com/actions/assets-plugin-chain-utils:909e3a0fd15020c95bb7618709f93cf520f5f3e3
       id: process-outputs
       with:
           entrypoint: assets-plugin-chain-utils
